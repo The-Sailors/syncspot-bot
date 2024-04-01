@@ -24,7 +24,7 @@ image:
 
 ## Access the container
 .PHONY: dev/image
-dev/image:
+dev/image: image
 	@echo "Running the docker image..."
 	docker run -it --rm syncspot /bin/bash
 
